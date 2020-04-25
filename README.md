@@ -15,29 +15,12 @@ In order to set up the necessary environment:
    ```
    conda activate used-cars-log-trans
    ```
-3. install `used-cars-log-trans` with:
+3. start JupyterLab with:
    ```
-   python setup.py install # or `develop`
+   jupyter lab
    ```
 
-Optional and needed only once after `git clone`:
-
-4. install several [pre-commit] git hooks with:
-   ```
-   pre-commit install
-   ```
-   and checkout the configuration under `.pre-commit-config.yaml`.
-   The `-n, --no-verify` flag of `git commit` can be used to deactivate pre-commit hooks temporarily.
-
-5. install [nbstripout] git hooks to remove the output cells of committed notebooks with:
-   ```
-   nbstripout --install --attributes notebooks/.gitattributes
-   ```
-   This is useful to avoid large diffs due to plots in your notebooks.
-   A simple `nbstripout --uninstall` will revert these changes.
-
-
-Then take a look into the `scripts` and `notebooks` folders.
+Then take a look into the `notebooks` folder.
 
 ## Project Organization
 
